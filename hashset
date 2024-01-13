@@ -1,0 +1,15 @@
+import java.util.HashSet;
+
+class A{
+    public static void main(String args[])
+    {
+      HashSet<Integer>v=new HashSet<Integer>();
+       v.add(7);
+       v.add(-8);
+       v.add(1);
+       
+       System.out.println(v);
+    }
+}
+output
+[1, 7, -8]
