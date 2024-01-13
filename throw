@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class AgeException extends RuntimeException{
+    AgeException(String s)
+    {
+        System.out.println(s);
+    }
+}
+class A{
+    public static void main(String args[])
+    {
+        int age=9;
+        if(age<=18)
+        throw new AgeException("not eligible for voting");
+        else
+        System.out.println("vote wisely");
+    }
+}
+output
+not eligible for voting
+Exception in thread "main" AgeException
+at A.main(A.java:15)
