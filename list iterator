@@ -1,0 +1,19 @@
+import java.util.Vector;
+import java.util.ListIterator;
+class A{
+    public static void main(String args[])
+    {
+       Vector<Integer>v=new Vector<Integer>();
+       v.add(7);
+       v.add(4);
+       v.add(1);
+       ListIterator e=v.listIterator();
+       while(e.hasNext()){
+           System.out.println(e.next());
+       }
+    }
+}
+output
+7
+4
+1
