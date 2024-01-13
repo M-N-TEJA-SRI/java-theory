@@ -1,0 +1,15 @@
+import java.util.TreeSet;
+
+class A{
+    public static void main(String args[])
+    {
+      TreeSet<Integer>v=new TreeSet<Integer>();
+       v.add(7);
+       v.add(4);
+       v.add(1);
+       v.add(7);
+       System.out.println(v);
+    }
+}
+output
+[1, 4, 7]
