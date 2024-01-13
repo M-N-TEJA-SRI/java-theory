@@ -1,0 +1,19 @@
+import java.util.Vector;
+import java.util.Enumeration;
+class A{
+    public static void main(String args[])
+    {
+       Vector<Integer>v=new Vector<Integer>();
+       v.add(7);
+       v.add(4);
+       v.add(1);
+       Enumeration e=v.elements();
+       while(e.hasMoreElements()){
+           System.out.println(e.nextElement());
+       }
+    }
+}
+output
+7
+4
+1
