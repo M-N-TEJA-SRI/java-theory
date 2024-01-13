@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class A{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        try{
+           int[] a=new int[3];
+           a[0]=9/3;
+           a[1]=9/9;
+           a[2]=6/0;
+           a[3]=9/3;
+            
+        }
+        catch(ArithmeticException e)
+        {
+            System.out.println("div by 0");
+        }
+        catch(ArrayIndexOutOfBoundsException a)
+        {
+            System.out.println("Index beyond limit");
+        }
+    }
+}
+o/p
+div by 0
