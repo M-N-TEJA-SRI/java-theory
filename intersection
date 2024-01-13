@@ -1,0 +1,19 @@
+import java.util.TreeSet;
+
+class A{
+    public static void main(String args[])
+    {
+      TreeSet<Integer>v=new TreeSet<Integer>();
+       v.add(7);
+       v.add(4);
+       v.add(1);
+TreeSet<Integer>s=new TreeSet<Integer>();
+s.add(0);
+s.add(4);
+s.add(3);
+s.retainAll(v);
+System.out.println(s);
+    }
+}
+output
+[4]
